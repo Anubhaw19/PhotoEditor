@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/gallery_item"
+        tools:itemCount="10"
+        tools:scrollbars="vertical"
+        tools:spanCount="3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload from Gallery"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:background="@drawable/button_border"/>
+
+        <Button
+            android:id="@+id/btn_cam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:background="@drawable/button_border"
+            android:text="Take selfie" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
